@@ -1,429 +1,284 @@
-
-body
-{
-    font-family: "Montserrat";
-    height: 1000px;
-    margin: 0;
-    padding-top: 35px;
+@font-face {
+    font-family: 'Mellow Burgundy';
+    src: url(MellowBurgundyDemoRegular-0WrXr.ttf);
 }
 
+@font-face {
+    font-family: 'Oishu Taveny';
+    src: url(OishuTaveny-2vLR3.ttf);
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+/*   DESIGNING MOBILE FIRST   */
+
+/*/// MOBILE, 320-480px ///*/
+@media screen and (min-width: 320px) and (max-width: 480px)
+{
+
+
+/*  TOP /blank for now/ actual header   */
 
 header
 {
-display: flex;
-flex-direction: column;
-align-items: center;
+height: 50px;
+}
+
+/*   Visible "Header"  */
+
+.Intro
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Intro_Pfp img
+{
+height: 100px;
+width: auto;
+}
+
+.Intro_Name
+{
+
+}
+
+.Intro_Name p
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 60px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
 }
 
 
-.Header_Name
+/*   Links  */
+
+.Links
+{
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.Links_Contact
 {
     text-decoration: none;
-    font-size: 10vw;
-    font-weight: 600;
-    color: #FFC31F;
-
-}
- 
-.bio
-{
- color: #4e2800;
- padding-bottom: 10px;
-}
-
-.bio_divider
-{
-    border: none;
-    height: 4px;
-    width: 70vw;
-    background-image: linear-gradient(to right, rgba(255, 195, 31, 0), rgba(255, 195, 31, 1), rgba(255, 195, 31, 0));
-}
-
-.art
-{
-
-    padding-top: 70px;
+   /*  color: #e24a08;*/
+    color: #f35b56;
+    font-size: 25px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 
+/*   Gallery  */
 
-
-
-
-
-
-ul
+.Gallery
 {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-padding-left: 0;
-}
-
-li
-{
-list-style: none;
-
-}
-
-.art ul li a img
-{
-
-    height: 50vw;
-    width: auto;
-    max-height: 800px;
-        padding-bottom: 20px;
-}
-
-.gif
-{
-    height: 50vw;
-    width: auto; 
-}
-
-.drivingGIF
-{
-    /* background: url("ART/Claire_Driving_GIF.gif"); */
-    height: auto;
-    width: 20vw;
-}
-
-
-
-
-.BrilliantArt_Claire
-{
-
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items:center;
+    margin-top: 45px;
+
 }
 
-.BrilliantArt_Claire ul
+.Gallery a 
 {
-display: flex;
-justify-content: space-around;
-width: 100%;
+
 }
 
-.BrilliantArt_Claire ul li
+/*   create this size thumbnail and upload indivdually instead of cropping so i can make the thumbnail look better, and 
+ROUND the edges   */
+.Gallery a img
 {
-display: flex;
-align-items: center;
-
+    height: 190px;
+    width: 170px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 
-.ClaireONE
+/*   Conclusion Call to Action  */
+
+.Collab
 {
-    max-height: 750px;
-    width: auto;
-    height: 40vw;
+    padding-top: 40px;
+    height: 450px;
 }
 
-.ClaireTWO
+.Collab_Q 
 {
-    max-width: 750px;
-    width: 16.5vw;
-    height: auto;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.ClaireTHREE
+
+.Collab_Q p
 {
-    max-width: 750px;
-    width: 30vw;
-    height: auto;
-
+    font-family: 'Mellow Burgundy';
+    font-size: 60px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-right: 80px;
+    position: relative;
+    top: 20px;
 }
 
-
-
-.BrilliantArt_Assets
+.Collab_Q p:nth-child(2)
 {
-    
+    font-family: 'Mellow Burgundy';
+    font-size: 60px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-left: 140px;
+    position: relative;
+    top: -2px;
 }
 
-.AssetDIV
+
+.Collab_Action
 {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
+    display:flex;
+    justify-content: center;
 }
 
-
-.AssetONE
+.Collab_Action p
 {
-    max-height: 750px;
-    width: auto;
-    height: 30vw;
-    min-height: 180px;
+    color: #f35b56;
+    font-size: 25px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding-right: 80px;
+    position: relative;
+    top: -10px;
 }
 
-.AssetTWO
-{
-    max-width: 750px;
-    min-width: 100px;
-    width: 8vw;
-    height: auto;
-    padding-top: 3vw;
-}
-
-.AssetTHREE
-{
-    max-width: 750px;
-    width: 25vw;
-    height: auto;
-}
-
-
-.BrilliantArt_Drive
+.Collab_Email 
 {
     display: flex;
     justify-content: center;
 }
 
 
-.DriveGIF
+.Collab_Email p
 {
-    max-width: 2000px;
-    width: 100vw;
-    height: auto;
-}
-
-
-
-
-
-.ClaireFOUR
-{
-    max-height: 750px;
-    min-height: 300px;
-    width: auto;
-    height: 30vw;
-    position: relative;
-    top: -90px;
-    z-index: -5;
-}
-
-.ClareCelebrate
-{
-display: flex;
-justify-content: center;
-}
-
-
-
-.footer
-{
-    background-color: #FFC31F;
+    color: #e47394;
+    font-size: 36px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
-    height: 400px;
+    position: relative;
+    top: -10px;
+}
+
+.Collab_Socials
+{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 
-        z-index: 3;
-    position: relative;
-    top: -120px;
+    padding-top: 25px;
 }
 
-.BackToTop
+.Collab_Socials img
 {
-text-decoration: none;
-color:#4e2800;
-font-weight: 800;
-font-size: 20px;
-position: relative;
-top: -30px;
-
-background: none;
-border:none;
-}
-
-/*
-
-button:active
-{
-    background: none;
-border:none;
-}
-
-button:focus
-{
-    background: none;
-border:none;
-}
-
-button:visited
-{
-    background: none;
-border:none;
-}
-*/
-
-button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-    cursor: pointer;
-	font: inherit;
-	outline: inherit;
-}
-
-.copyright
-{
-margin:0;
-
-}
-
-
-.Header_Name_FOOT
-{
-    text-decoration: none;
-    font-size: 5vw;
-    font-weight: 600;
-    color: #ffffff;
-    position: relative;
-    top: 25px;
-}
-
-.bio_FOOT
-{
-     color: #4e2800;
+    height: 50px;
+    width: auto;
     padding-bottom: 10px;
-    position: relative;
-    top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
 }
 
-
-.bio_divider_FOOT
+.Collab_Socials_Main a
 {
-    border: none;
-    height: 4px;
-    width: 30vw;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255,.5), rgba(255, 255, 255, 0));
-    position: relative;
-    top: -50px;
+        text-decoration: none;
 }
 
-.email_FOOT
+.Collab_Socials_Second a
 {
-    color: #4e2800;
-    padding-bottom: 10px;
-    font-size: 2vw;
+        text-decoration: none;
+}
+
+.Collab_Socials_Third
+{
+    
+}
+
+/*   Footer  */
+
+footer
+{
+
+
+    display: flex;
+
+}
+
+.footer_Credits
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    position: relative;
-    top: -20px;
+    font-style: normal;
+    font-size: 12px;
+
+    height: 30px;
+}
+
+.footer_Credits p:nth-child(1)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(2)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(3)
+{
+    margin: 0;
+        font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer_Credits p:nth-child(4)
+{
+    margin: 0;
+}
+
+.footer_BackToTop
+{
+
 }
 
 
 
 
 
-/*/// MOBILE, 320-480px ///*/
-@media screen and (min-width: 320px) and (max-width: 480px)
-{
-
-    .art
-    {
-        padding-top: 30px;
-    }
-
-        .art ul
-    {
-        flex-direction: column;
-        align-content: center;
-    }
-
-    .art li
-    {
-        display: flex;
-        justify-content: center;
-    }
-
-    .art ul li a img
-    {
-
-    height: 85vw;
-    width: auto;
-    max-height: 800px;
-    padding-bottom: 20px;
-    }
-
-
-
-
-    .ClaireFOUR
-{
-    max-height: 750px;
-    min-height: 300px;
-    width: auto;
-    height: 30vw;
-    position: relative;
-    top: -90px;
-    z-index: -5;
-}
-
-.ClareCelebrate
-{
-overflow: hidden;
-width: 100vw;
-height: auto;
-}
-
-
-            .footer
-    {
-    height: 200px;
-    }
-
-
-.bio_FOOT
-{
-    font-size: 12PX;
-    position: relative;
-    top: 20px;
-}
-
-
-            .bio_divider_FOOT
-    {
-    position: relative;
-    top: -30px;
-    }
-
-.email_FOOT
-{
-    position: relative;
-    top: -5px;
-    font-size: 15px;
-}
-
-.Header_Name_FOOT
-{
-    font-size: 9vw;
-    top: 20px;
-
-}
-
-.copyright
-{
-margin:0;
-font-size: 10px;
-position: relative;
-top: -10px;
-}
-
-.BackToTop
-{
-top: -20px;
-font-size: 15px;
-}
 
 }
 
@@ -431,122 +286,1091 @@ font-size: 15px;
 /*/// iPads, Tablets, 481-768px ///*/
 @media screen and (min-width: 481px) and (max-width: 768px)
 {
-    .art ul
-    {
-        flex-direction: column;
-        align-content: center;
-    }
+/*  TOP /blank for now/ actual header   */
 
-    .art li
-    {
-        display: flex;
-        justify-content: center;
-    }
+header
+{
+height: 50px;
+}
 
-    .art ul li a img
-    {
+/*   Visible "Header"  */
 
-    height: 75vw;
-    width: auto;
-    max-height: 800px;
-    padding-bottom: 20px;
-    }
+.Intro
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
-            .footer
-    {
-    height: 250px;
-    }
+.Intro_Pfp img
+{
+height: 170px;
+width: auto;
+}
 
-        .bio_divider_FOOT
-    {
+.Intro_Name
+{
+
+}
+
+.Intro_Name p
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 108px;
+    margin: 0;
+    margin-top: 15px;
+    color: #f1b900;
+}
+
+
+/*   Links  */
+
+.Links
+{
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.Links_Contact
+{
+    text-decoration: none;
+   /*  color: #e24a08;*/
+    color: #f35b56;
+    font-size: 30px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/*   Gallery  */
+
+.Gallery
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 45px;
+    column-gap: 40px;
+    row-gap: 40px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.Gallery a 
+{
+
+}
+
+/*   create this size thumbnail and upload indivdually instead of cropping so i can make the thumbnail look better, and 
+ROUND the edges   */
+.Gallery a img
+{
+    height: 285px;
+    width: 255px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*   Conclusion Call to Action  */
+
+.Collab
+{
+    padding-top: 40px;
+
+}
+
+.Collab_Q 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Collab_Q p
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 90px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-right: 140px;
     position: relative;
-    top: -30px;
-    }
-
-.email_FOOT
-{
-    position: relative;
-    top:-10px;
-    font-size: 20px;
-}
-
-.BackToTop
-{
-position: relative;
-top: -20px;
-font-size: 15px;
-}
-
-.copyright
-{
-margin:0;
-font-size: 10px;
-}
-
-
-.Header_Name_FOOT
-{
-    font-size: 7.6vw;
     top: 20px;
+}
+
+.Collab_Q p:nth-child(2)
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 90px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-left: 280px;
+    position: relative;
+    top: -2px;
+}
+
+
+.Collab_Action
+{
+    display:flex;
+    justify-content: center;
+}
+
+.Collab_Action p
+{
+    color: #f35b56;
+    font-size: 35px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding-right: 150px;
+    position: relative;
+    top: -20px;
+}
+
+.Collab_Email 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.Collab_Email p
+{
+    color: #e47394;
+    font-size: 60px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    position: relative;
+    top: 0px;
+}
+
+.Collab_Socials
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 75px;
 
 }
 
-.bio_divider_FOOT
+.Collab_Socials img
+{
+    height: 63px;
+    width: auto;
+    padding-bottom: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+
+.Collab_Socials_Main a
+{
+        text-decoration: none;
+}
+
+.Collab_Socials_Second a
+{
+        text-decoration: none;
+}
+
+
+.Collab_Socials_Third img:nth-child(1)
 {
     position: relative;
-    width: 30vw;
-    top: -30px;
+    left:-103px;
 }
 
+.Collab_Socials_Third img:nth-child(2)
+{
+    position: relative;
+    right:-105px;
+}
+
+/*   Footer  */
+
+footer
+{
+
+
+    display: flex;
+height: 60px;
+}
+
+.footer_Credits
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+
+    
+}
+
+.footer_Credits p:nth-child(1)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(2)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(3)
+{
+    margin: 0;
+        font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer_Credits p:nth-child(4)
+{
+    margin: 0;
+}
+
+.footer_BackToTop
+{
 
 }
+
+}
+
 
 
 /*/// Small Screens, Laptops, 769-1024px ///*/
 @media screen and (min-width: 769px) and (max-width: 1024px)
 {
-        .footer
-    {
-    height: 265px;
-    }
+/*  TOP /blank for now/ actual header   */
 
-    .bio_divider_FOOT
+header
+{
+height: 50px;
+}
+
+/*   Visible "Header"  */
+
+.Intro
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Intro_Pfp img
+{
+height: 170px;
+width: auto;
+}
+
+.Intro_Name
+{
+
+}
+
+.Intro_Name p
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 108px;
+    margin: 0;
+    margin-top: 15px;
+    color: #f1b900;
+}
+
+
+/*   Links  */
+
+.Links
+{
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.Links_Contact
+{
+    text-decoration: none;
+   /*  color: #e24a08;*/
+    color: #f35b56;
+    font-size: 30px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/*   Gallery  */
+
+.Gallery
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 45px;
+    column-gap: 40px;
+    row-gap: 40px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.Gallery a 
+{
+
+}
+
+/*   create this size thumbnail and upload indivdually instead of cropping so i can make the thumbnail look better, and 
+ROUND the edges   */
+.Gallery a img
+{
+    height: 285px;
+    width: 255px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*   Conclusion Call to Action  */
+
+.Collab
+{
+    padding-top: 40px;
+
+}
+
+.Collab_Q 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Collab_Q p
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 90px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-right: 140px;
+    position: relative;
+    top: 20px;
+}
+
+.Collab_Q p:nth-child(2)
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 90px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-left: 280px;
+    position: relative;
+    top: -2px;
+}
+
+
+.Collab_Action
+{
+    display:flex;
+    justify-content: center;
+}
+
+.Collab_Action p
+{
+    color: #f35b56;
+    font-size: 35px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding-right: 150px;
+    position: relative;
+    top: -20px;
+}
+
+.Collab_Email 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.Collab_Email p
+{
+    color: #e47394;
+    font-size: 60px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    position: relative;
+    top: 0px;
+}
+
+.Collab_Socials
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 75px;
+
+}
+
+.Collab_Socials img
+{
+    height: 63px;
+    width: auto;
+    padding-bottom: 25px;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+
+.Collab_Socials_Main a
+{
+        text-decoration: none;
+}
+
+.Collab_Socials_Second a
+{
+        text-decoration: none;
+}
+
+
+.Collab_Socials_Third img:nth-child(1)
 {
     position: relative;
-    top: -30px;
+    left:-103px;
 }
 
-.email_FOOT
+.Collab_Socials_Third img:nth-child(2)
 {
     position: relative;
-    top:-10px;
-    font-size: 20px;
+    right:-105px;
 }
 
+/*   Footer  */
 
-.BackToTop
+footer
 {
-position: relative;
-top: -20px;
 
+
+    display: flex;
+height: 60px;
 }
-.copyright
+
+.footer_Credits
 {
-margin:0;
-font-size: 15px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
 
     
+}
+
+.footer_Credits p:nth-child(1)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(2)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(3)
+{
+    margin: 0;
+        font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer_Credits p:nth-child(4)
+{
+    margin: 0;
+}
+
+.footer_BackToTop
+{
+
+}
 }
 
 
 /*/// Desktops, Large Screens, 1025-1200 px ///*/
 @media screen and (min-width: 1025px) and (max-width: 1200px) 
 {
-    .footer
-    {
-    height: 300px;
-    }
+/*  TOP /blank for now/ actual header   */
+
+header
+{
+height: 50px;
+}
+
+/*   Visible "Header"  */
+
+.Intro
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Intro_Pfp img
+{
+height: 170px;
+width: auto;
+}
+
+.Intro_Name
+{
+
+}
+
+.Intro_Name p
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 108px;
+    margin: 0;
+    margin-top: 15px;
+    color: #f1b900;
+}
+
+
+/*   Links  */
+
+.Links
+{
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.Links_Contact
+{
+    text-decoration: none;
+   /*  color: #e24a08;*/
+    color: #f35b56;
+    font-size: 30px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/*   Gallery  */
+
+.Gallery
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 45px;
+    column-gap: 40px;
+    row-gap: 40px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.Gallery a 
+{
+
+}
+
+/*   create this size thumbnail and upload indivdually instead of cropping so i can make the thumbnail look better, and 
+ROUND the edges   */
+.Gallery a img
+{
+    height: 285px;
+    width: 255px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*   Conclusion Call to Action  */
+
+.Collab
+{
+    padding-top: 40px;
+
+}
+
+.Collab_Q 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Collab_Q p
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 90px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-right: 140px;
+    position: relative;
+    top: 20px;
+}
+
+.Collab_Q p:nth-child(2)
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 90px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-left: 280px;
+    position: relative;
+    top: -2px;
+}
+
+
+.Collab_Action
+{
+    display:flex;
+    justify-content: center;
+}
+
+.Collab_Action p
+{
+    color: #f35b56;
+    font-size: 35px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding-right: 150px;
+    position: relative;
+    top: -20px;
+}
+
+.Collab_Email 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.Collab_Email p
+{
+    color: #e47394;
+    font-size: 60px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    position: relative;
+    top: 0px;
+}
+
+.Collab_Socials
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 75px;
+
+}
+
+.Collab_Socials img
+{
+    height: 63px;
+    width: auto;
+    padding-bottom: 25px;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+
+.Collab_Socials_Main a
+{
+        text-decoration: none;
+}
+
+.Collab_Socials_Second a
+{
+        text-decoration: none;
+}
+
+
+.Collab_Socials_Third img:nth-child(1)
+{
+    position: relative;
+    left:-103px;
+}
+
+.Collab_Socials_Third img:nth-child(2)
+{
+    position: relative;
+    right:-105px;
+}
+
+/*   Footer  */
+
+footer
+{
+
+
+    display: flex;
+height: 60px;
+}
+
+.footer_Credits
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
 
     
+}
+
+.footer_Credits p:nth-child(1)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(2)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(3)
+{
+    margin: 0;
+        font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer_Credits p:nth-child(4)
+{
+    margin: 0;
+}
+
+.footer_BackToTop
+{
+
+}
+}
+
+/*/// 1201+++ px ///*/
+@media screen and (min-width: 1201px) 
+{
+/*  TOP /blank for now/ actual header   */
+
+header
+{
+height: 50px;
+}
+
+/*   Visible "Header"  */
+
+.Intro
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Intro_Pfp img
+{
+height: 170px;
+width: auto;
+}
+
+.Intro_Name
+{
+
+}
+
+.Intro_Name p
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 108px;
+    margin: 0;
+    margin-top: 15px;
+    color: #f1b900;
+}
+
+
+/*   Links  */
+
+.Links
+{
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.Links_Contact
+{
+    text-decoration: none;
+   /*  color: #e24a08;*/
+    color: #f35b56;
+    font-size: 30px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/*   Gallery  */
+
+.Gallery
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 45px;
+    column-gap: 40px;
+    row-gap: 40px;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 20px;
+}
+
+.Gallery a 
+{
+
+}
+
+/*   create this size thumbnail and upload indivdually instead of cropping so i can make the thumbnail look better, and 
+ROUND the edges   */
+.Gallery a img
+{
+    height: 380px;
+    width: 340px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*   Conclusion Call to Action  */
+
+.Collab
+{
+    padding-top: 100px;
+
+}
+
+.Collab_Q 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Collab_Q p
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 120px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-right: 140px;
+    position: relative;
+    top: 20px;
+}
+
+.Collab_Q p:nth-child(2)
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 120px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-left: 280px;
+    position: relative;
+    top: -2px;
+}
+
+
+.Collab_Action
+{
+    display:flex;
+    justify-content: center;
+}
+
+.Collab_Action p
+{
+    color: #f35b56;
+    font-size: 45px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding-right: 175px;
+    position: relative;
+    top: -20px;
+}
+
+.Collab_Email 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.Collab_Email p
+{
+    color: #e47394;
+    font-size: 70px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    position: relative;
+    top: 0px;
+}
+
+.Collab_Socials
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 75px;
+
+}
+
+.Collab_Socials img
+{
+    height: 63px;
+    width: auto;
+    padding-bottom: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+
+.Collab_Socials_Main a
+{
+        text-decoration: none;
+}
+
+.Collab_Socials_Second a
+{
+        text-decoration: none;
+}
+
+
+.Collab_Socials_Third img:nth-child(1)
+{
+    position: relative;
+    left:-103px;
+}
+
+.Collab_Socials_Third img:nth-child(2)
+{
+    position: relative;
+    right:-105px;
+}
+
+/*   Footer  */
+
+footer
+{
+
+
+    display: flex;
+height: 60px;
+}
+
+.footer_Credits
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+
+    
+}
+
+.footer_Credits p:nth-child(1)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(2)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(3)
+{
+    margin: 0;
+        font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer_Credits p:nth-child(4)
+{
+    margin: 0;
+}
+
+.footer_BackToTop
+{
+
+}
 }
