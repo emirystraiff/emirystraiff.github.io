@@ -282,9 +282,275 @@ footer
 
 }
 
+@media screen and (min-width: 481px) and (max-width: 647px)
+{
 
-/*/// iPads, Tablets, 481-768px ///*/
-@media screen and (min-width: 481px) and (max-width: 768px)
+
+/*  TOP /blank for now/ actual header   */
+
+header
+{
+height: 50px;
+}
+
+/*   Visible "Header"  */
+
+.Intro
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Intro_Pfp img
+{
+height: 100px;
+width: auto;
+}
+
+.Intro_Name
+{
+
+}
+
+.Intro_Name p
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 60px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+}
+
+
+/*   Links  */
+
+.Links
+{
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.Links_Contact
+{
+    text-decoration: none;
+   /*  color: #e24a08;*/
+    color: #f35b56;
+    font-size: 25px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/*   Gallery  */
+
+.Gallery
+{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 45px;
+
+}
+
+.Gallery a 
+{
+
+}
+
+/*   create this size thumbnail and upload indivdually instead of cropping so i can make the thumbnail look better, and 
+ROUND the edges   */
+.Gallery a img
+{
+    height: 190px;
+    width: 170px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*   Conclusion Call to Action  */
+
+.Collab
+{
+    padding-top: 40px;
+    height: 450px;
+}
+
+.Collab_Q 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Collab_Q p
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 50px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-right: 80px;
+    position: relative;
+    top: 20px;
+}
+
+.Collab_Q p:nth-child(2)
+{
+    font-family: 'Mellow Burgundy';
+    font-size: 50px;
+    margin: 0;
+    margin-top: 6.5px;
+    color: #f1b900;
+    padding-left: 140px;
+    position: relative;
+    top: -2px;
+}
+
+
+.Collab_Action
+{
+    display:flex;
+    justify-content: center;
+}
+
+.Collab_Action p
+{
+    color: #f35b56;
+    font-size: 25px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding-right: 80px;
+    position: relative;
+    top: -10px;
+}
+
+.Collab_Email 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.Collab_Email p
+{
+    color: #e47394;
+    font-size: 27px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    position: relative;
+    top: -10px;
+}
+
+.Collab_Socials
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 25px;
+}
+
+.Collab_Socials img
+{
+    height: 50px;
+    width: auto;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.Collab_Socials_Main a
+{
+        text-decoration: none;
+}
+
+.Collab_Socials_Second a
+{
+        text-decoration: none;
+}
+
+.Collab_Socials_Third
+{
+    
+}
+
+/*   Footer  */
+
+footer
+{
+
+
+    display: flex;
+
+}
+
+.footer_Credits
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+
+    height: 30px;
+}
+
+.footer_Credits p:nth-child(1)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(2)
+{
+    margin: 0;
+}
+
+.footer_Credits p:nth-child(3)
+{
+    margin: 0;
+        font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer_Credits p:nth-child(4)
+{
+    margin: 0;
+}
+
+.footer_BackToTop
+{
+
+}
+
+
+
+
+
+
+}
+
+
+
+/*/// iPads, Tablets, 481 (648)-768px ///*/
+@media screen and (min-width: 648px) and (max-width: 768px)
 {
 /*  TOP /blank for now/ actual header   */
 
@@ -1374,3 +1640,8 @@ height: 60px;
 
 }
 }
+
+
+
+
+
